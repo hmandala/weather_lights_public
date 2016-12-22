@@ -37,6 +37,7 @@ import RPi.GPIO as GPIO
 #	}
 #}
 
+"""
 def get_duty_cycle(weather):
 	cloud_cover = weather["clouds"]["all"]
 	sunrise = arrow.get(weather["sys"]["sunrise"]).to('US/Pacific').replace(day=1, month=1, year=1900)
@@ -51,7 +52,7 @@ def get_duty_cycle(weather):
 	else:
 		print "Day, using cloud cover value: %d" % cloud_cover
 		return cloud_cover #TODO can we learn this value per the users preferences?
-
+"""
 
 # Custom Shadow update callback
 def customShadowCallback_Update(payload, responseStatus, token):
